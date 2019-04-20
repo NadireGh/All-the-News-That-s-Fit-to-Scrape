@@ -18,7 +18,7 @@ var ArticleSchema = new Schema({
   },
  
   // one to many comments
-  comments: [{ type: Schema.Types.ObjectId, ref: 'Comment' }],
+  comments: [{ type: Schema.Types.ObjectId, ref: "comments" }],
 });
 
 var Article = mongoose.model("Article", ArticleSchema);
