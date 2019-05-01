@@ -20,8 +20,10 @@ $.getJSON("/articles", function (data) {
 
 // Whenever someone clicks a p tag
 $(document).on("click", "button", function () {
+    console.log("heloo")
     var thisId = $(this).attr("data-id");
-    var thisType = $(this).attr("data-type");
+    var thisType = $(this).data("type");
+    console.log(thisType)
 
     if (thisType === 'delete-comment') {
         $.ajax({
@@ -45,9 +47,10 @@ $(document).on("click", "button", function () {
         $.ajax({
             method: "GET",
             url: "/scrape",
-        }).then(function (data) {
-            window.alert("added " + data.inserted + " new articles.");
-            document.location.reload();
+        }).then(function () {
+            alert("scrape successful!")
+            // window.alert("added " + data.inserted + " new articles.");
+            // document.location.reload();
         });
     }
 });
