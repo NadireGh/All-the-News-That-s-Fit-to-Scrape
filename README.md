@@ -34,3 +34,6 @@ open browser on localhost:3000
 ## Screenshots
 
 ![alt text](Image/ReadMe.png )
+![alt text](Image/ReadMe1.png )
+![alt text](Image/ReadMe2.png )
+![alt text](Image/ReadMe3.png )

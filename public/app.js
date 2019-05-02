@@ -13,6 +13,7 @@ $.getJSON("/articles", function (data) {
             "<p>URL: <a href='" + data[i].url + "' target='_blank'>" + data[i].url + "</a></p>" +
             "<p>comments:</p> " + comments +
             "<button data-type='add-comment' data-id='" + data[i]._id + "'>Add</button>" +
+            "<button data-type='save' data-id='" + data[i]._id + "'>Save</button>" +
             "</article><br />");
     }
 });
